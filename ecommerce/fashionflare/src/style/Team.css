@@ -1,0 +1,38 @@
+/* src/Team.css */
+.team-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .team-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .team-member {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 200px;
+    text-align: center;
+  }
+  
+  .team-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .team-name {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
