@@ -10,7 +10,8 @@ const RegisterPage = () => {
         email: '',
         name: '',
         phoneNumber: '',
-        password: ''
+        password: '',
+        role: 'Customer' // Default role
     });
 
     const [message, setMessage] = useState(null);
@@ -42,6 +43,16 @@ const RegisterPage = () => {
             <h2>Register</h2>
             {message && <p className="message">{message}</p>}
             <form onSubmit={handleSubmit}>
+                <label>Role: </label>
+           <select
+                   name="role"
+              value={formData.role}
+               onChange={handleChange}
+                      required>
+               <option value="Customer">Customer</option>
+                 <option value="Boutique Owner">Boutique Owner</option>
+             </select>
+
                 <label>Email: </label>
                 <input
                     type="email"
